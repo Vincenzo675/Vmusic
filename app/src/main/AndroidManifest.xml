@@ -85,6 +85,10 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
+                    android:scheme="vmusic"
+                    android:host="spotify"
+                    android:pathPrefix="/callback" />
+                <data
                     android:scheme="vtune"
                     android:host="spotify"
                     android:pathPrefix="/callback" />

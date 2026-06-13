@@ -239,7 +239,8 @@
     <string name="release_notes">Release notes</string>
     <string name="changelog">Changelog</string>
     <string name="changelog_empty">No changelogs available</string>
-    <string name="github_releases_url">https://github.com/Vincenzo675/Vtune/releases</string>
+    <string name="github_releases_url">https://github.com/Vincenzo675/Vmusic/releases</string>
+    <string name="vmusic_github_releases_url">https://github.com/Vincenzo675/Vmusic/releases</string>
     <string name="list_bullet">•</string>
     <string name="view_on_github">View on GitHub</string>
     <string name="current_version">Current version</string>
@@ -594,7 +595,7 @@
     <string name="wrapped_total_artists_subtitle">unique artists!</string>
     <string name="wrapped_total_songs_title">You\'ve listened to</string>
     <string name="wrapped_total_songs_subtitle">unique songs!</string>
-    <string name="wrapped_intro_title">Vtune</string>
+    <string name="wrapped_intro_title">Vmusic</string>
     <string name="wrapped_intro_subtitle">it\'s time to see what you\'ve been listening to all this year…</string>
     <string name="wrapped_intro_button">let\'s go!</string>
     <string name="wrapped_end_thanks">Thanks for listening with Meld!</string>
@@ -965,7 +966,7 @@
     <string name="credits_collaborator">Collaborator</string>
     <string name="credits_collaborators_section">Collaborators</string>
     <string name="credits_original_project">Original Project</string>
-    <string name="credits_based_on_metrolist">Vtune is based on Metrolist, an open-source YouTube Music client.</string>
+    <string name="credits_based_on_metrolist">Vmusic is based on Metrolist, an open-source YouTube Music client.</string>
     <string name="credits_license_name">GNU General Public License v3.0</string>
     <string name="credits_license_desc">Free, open-source software. You may use, study, share, and improve it</string>
     <string name="credits_discord">WhatsApp</string>
@@ -978,10 +979,10 @@
     <string name="like_what_i_do">Like what I do?</string>
     <string name="buy_mo_a_coffee">Buy me a coffee!</string>
     <string name="community_and_info">Community &amp; Info</string>
-    <string name="metrolist">Vtune</string>
+    <string name="metrolist">Vmusic</string>
     <string name="wanna_play_favorite_song">Want to play their favorite song?</string>
     <string name="yeah">Yeah!</string>
-    <string name="stands_with_palestine">This project stands with Palestine 🇵🇸</string>
+    <string name="made_with_love_by_vince">made with love by vince</string>
 
     <!-- Podcasts -->
     <string name="filter_podcasts">Podcasts</string>

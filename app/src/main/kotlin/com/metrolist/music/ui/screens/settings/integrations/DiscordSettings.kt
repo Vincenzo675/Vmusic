@@ -951,18 +951,18 @@ fun RichPresence(
                 val resolvedButton2 =
                     if (song != null) {
                         DiscordRPC.resolveVariables(
-                            button2Text.ifEmpty { "Visit Vtune" },
+                            button2Text.ifEmpty { "Visit Vmusic" },
                             song,
                         )
                     } else {
-                        button2Text.ifEmpty { "Visit Vtune" }
+                        button2Text.ifEmpty { "Visit Vmusic" }
                     }
                 OutlinedButton(
                     onClick = {
                         val intent =
                             Intent(
                                 Intent.ACTION_VIEW,
-                                "https://github.com/Vincenzo675/Vtune".toUri(),
+                                "https://github.com/Vincenzo675/Vmusic".toUri(),
                             )
                         context.startActivity(intent)
                     },

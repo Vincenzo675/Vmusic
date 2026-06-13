@@ -36,7 +36,7 @@ android {
         targetSdk = 36
         versionCode = 17
         versionName = "0.7.2"
-        resValue("string", "app_name", appNameOverride ?: "Vtune")
+        resValue("string", "app_name", appNameOverride ?: "Vmusic")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -53,7 +53,7 @@ android {
         // and a fine-grained PAT with issues:write scoped to that repo only.
         // Both must be present at build time for reporting to be active at runtime.
         val crashRepo = localProperties.getProperty("CRASH_REPORT_REPO")
-             ?: System.getenv("CRASH_REPORT_REPO") ?: "Vincenzo675/Vtune"
+             ?: System.getenv("CRASH_REPORT_REPO") ?: "Vincenzo675/Vmusic"
         val crashToken = localProperties.getProperty("CRASH_REPORT_TOKEN")
             ?: System.getenv("CRASH_REPORT_TOKEN") ?: ""
         buildConfigField("String", "CRASH_REPORT_REPO", "\"$crashRepo\"")
@@ -132,7 +132,7 @@ android {
             }
             isDebuggable = true
             if (appNameOverride == null) {
-                 resValue("string", "app_name", "Vtune Debug")
+                 resValue("string", "app_name", "Vmusic Debug")
             }
             signingConfig =
                 if (workflowDebugKeystoreFile != null) {

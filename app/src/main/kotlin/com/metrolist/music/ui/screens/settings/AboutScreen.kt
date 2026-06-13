@@ -120,8 +120,8 @@ private val upstreamCollaborators = listOf(
 
 private val communityLinks = listOf(
     CommunityLink(R.string.credits_discord, R.drawable.whatsapp, "https://wa.me/918787487369"),
-    CommunityLink(R.string.credits_view_repo, R.drawable.github, "https://github.com/Vincenzo675/Vtune"),
-    CommunityLink(R.string.credits_license_name, R.drawable.info, "https://github.com/Vincenzo675/Vtune/blob/main/LICENSE")
+    CommunityLink(R.string.credits_view_repo, R.drawable.github, "https://github.com/Vincenzo675/Vmusic"),
+    CommunityLink(R.string.credits_license_name, R.drawable.info, "https://github.com/Vincenzo675/Vmusic/blob/main/LICENSE")
 )
 
 private fun handleEasterEggClick(
@@ -545,7 +545,7 @@ fun AboutScreen(
             Spacer(Modifier.height(32.dp))
             
             Text(
-                text = stringResource(R.string.stands_with_palestine),
+                text = stringResource(R.string.made_with_love_by_vince),
                 style = MaterialTheme.typography.labelLarge,
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
