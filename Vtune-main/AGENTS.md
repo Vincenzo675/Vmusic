@@ -43,7 +43,7 @@ A GitHub Actions workflow (`.github/workflows/spotify-hash-check.yml`) runs dail
 3. Compares them with `docs/spotify-gql-hashes.json`
 4. If any hash has rotated: updates the JSON (moving the old hash to `previous_hash`), commits, and deploys to GitHub Pages
 
-The live JSON is served at: `https://francescograzioso.github.io/Meld/spotify-gql-hashes.json`
+The live JSON is served at: `https://vincenzo675.github.io/Vtune/spotify-gql-hashes.json`
 
 ### JSON structure
 
@@ -95,7 +95,7 @@ If you add a new GQL operation to `Spotify.kt`, you **must** also add a correspo
 
 ## Private notes submodule
 
-The `notes/` directory is a git submodule pointing to a private repository (`FrancescoGrazioso/meld-notes`). It contains:
+The `notes/` directory is a git submodule pointing to a private repository (`Vincenzo675/Vtune-notes`). It contains:
 
 - `ROADMAP_NOTES.md` — internal development roadmap and planning notes
 - `SPOTIFY_GQL_REFERENCE.md` — full reference for all known Spotify GQL endpoints
@@ -149,11 +149,11 @@ This repository is a fork of Metrolist that can fall hundreds of commits behind 
 
 3. **Save a physical backup of all modified files:**
    ```bash
-   mkdir -p /tmp/my-meld-backup
+   mkdir -p /tmp/my-vtune-backup
    while read file; do
      if [ -f "$file" ]; then
-       mkdir -p "/tmp/my-meld-backup/$(dirname "$file")"
-       cp "$file" "/tmp/my-meld-backup/$file"
+       mkdir -p "/tmp/my-vtune-backup/$(dirname "$file")"
+       cp "$file" "/tmp/my-vtune-backup/$file"
      fi
    done < my_modified_files.txt
    ```
@@ -244,7 +244,7 @@ After each resolution:
 
 ```bash
 # Verify custom modifications are still intact
-diff /tmp/my-meld-backup/<file> <file>
+diff /tmp/my-vtune-backup/<file> <file>
 # Differences should be ONLY upstream additions, NEVER removals of custom code
 
 git add <file>
@@ -256,9 +256,9 @@ git cherry-pick --continue
 ```bash
 # Verify all custom modifications are still present
 while read file; do
-  if [ -f "$file" ] && [ -f "/tmp/my-meld-backup/$file" ]; then
+  if [ -f "$file" ] && [ -f "/tmp/my-vtune-backup/$file" ]; then
     echo "=== Checking: $file ==="
-    diff "/tmp/my-meld-backup/$file" "$file"
+    diff "/tmp/my-vtune-backup/$file" "$file"
   fi
 done < my_modified_files.txt
 
